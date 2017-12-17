@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<nifty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://nifty-gui.lessvoid.com/nifty-gui" xsi:schemaLocation="https://raw.githubusercontent.com/void256/nifty-gui/1.4/nifty-core/src/main/resources/nifty.xsd https://raw.githubusercontent.com/void256/nifty-gui/1.4/nifty-core/src/main/resources/nifty.xsd">
+    <useControls filename="nifty-default-controls.xml"/>
+    <useStyles filename="nifty-default-styles.xml"/>
+    <screen id="start">
+        <layer id="background" childLayout="center"/>
+        <layer id="foreground" childLayout="vertical">
+            <panel id="panel_top" childLayout="center" width="75%" align="center" height="25%"/>
+            <panel id="panel_mid" childLayout="center" width="75%" align="center" height="50%"/>
+            <panel id="panel_bottom" childLayout="horizontal" width="75%" align="center" height="25%">
+                <panel id="panel_bottom_left" childLayout="center" width="50%" valign="center" height="50%">
+                    <control name="button" id="StartButton" valign="center" label="Start" align="center"/>
+                </panel>
+                <panel id="panel_bottom_right" childLayout="center" width="50%" valign="center" height="50%">
+                    <control name="button" id="QuitButton" valign="center" label="Quit" align="center"/>
+                </panel>
+            </panel>
+        </layer>
+    </screen>
+    <screen id="hud">
+        <layer id="GLayer2" childLayout="center"/>
+        <layer id="GLayer3" childLayout="horizontal">
+            <panel id="panel_left" childLayout="vertical" width="80%" height="100%"/>
+            <panel id="panel_right" childLayout="vertical" width="20%" height="100%">
+                <panel id="panel_top_right1" childLayout="center" width="100%" height="15%">
+                    <control name="label" id="" color="#000" width="100%" text="123" height="100%"/>
+                </panel>
+                <panel id="panel_top_right2" childLayout="center" width="100%" height="15%"/>
+                <panel id="panel_bot_right" width="100%" valign="center" height="70%"/>
+            </panel>
+        </layer>
+    </screen>
+</nifty>

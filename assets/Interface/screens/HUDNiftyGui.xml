@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<nifty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://nifty-gui.lessvoid.com/nifty-gui" xsi:schemaLocation="https://raw.githubusercontent.com/void256/nifty-gui/1.4/nifty-core/src/main/resources/nifty.xsd https://raw.githubusercontent.com/void256/nifty-gui/1.4/nifty-core/src/main/resources/nifty.xsd">
+    <useControls filename="nifty-default-controls.xml"/>
+    <useStyles filename="nifty-default-styles.xml"/>
+    <screen id="HUD" controller="mygame.HUDControler">
+        <layer id="layer" childLayout="center">
+            <panel id="ButtonPanel" childLayout="horizontal" width="100%" style="nifty-panel-bright" valign="bottom" height="25%">
+                <panel id="MapPanel" width="25%" style="nifty-panel-bright" align="left"/>
+                <panel id="UnitsPanel" childLayout="horizontal" width="50%" style="nifty-panel-bright">
+                    <panel id="FacePanel" childLayout="center" width="30%" style="nifty-panel-bright">
+                        <image id="FaceImage" filename="Textures/Faces/Null.jpg" width="95%" height="95%"/>
+                    </panel>
+                </panel>
+                <panel id="SkillPanel" childLayout="vertical" width="25%" style="nifty-panel-bright" align="right"/>
+            </panel>
+            <panel id="TopPanel" childLayout="horizontal" width="100%" style="nifty-panel-bright" valign="top" height="5%"/>
+        </layer>
+    </screen>
+</nifty>
